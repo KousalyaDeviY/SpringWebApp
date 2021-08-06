@@ -44,7 +44,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 			dao.deleteById(id);
 			return "The Employee with id :" + id + " deleted";
 		} catch (DataAccessException e) {
-			throw new DatabaseException("Some issue with database!! "+e.getMessage());
+			throw new DatabaseException("Some issues are with database!! "+e.getMessage());
 		}
 	}
 
